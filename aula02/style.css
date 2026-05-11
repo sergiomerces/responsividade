@@ -77,3 +77,8 @@ main {
     flex-direction: column;
     gap: 20px;
 }
+
+main img {
+    width: 100%;
+    height: auto;
+}
