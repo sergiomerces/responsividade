@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -28,10 +28,20 @@ footer {
     text-align: center;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav {
     display: flex;
     justify-content:space-between;
     align-items: center;
+}
+
+#icon {
+    display: none;
 }
 
 ul {
@@ -60,8 +70,11 @@ section {
         display: block;
     }
 
-    nav > h1 {
-        text-align: left;
+    #icon {
+        display: block;
+        background-color: #fff;
+        width: 2.5rem;
+        cursor: pointer;
     }
 
     nav > ul {
@@ -70,15 +83,13 @@ section {
         gap: 10px;
         margin-top: 10px;
     }
+
+    main img {
+        width: 100%;
+        height: auto;
+    }
+    
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-main img {
-    width: 100%;
-    height: auto;
-}
+
